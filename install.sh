@@ -33,7 +33,7 @@ apt-get install -y php php-bcmath php-bz2 php-calendar php-ctype php-curl php-do
     && mv composer.phar /usr/bin/composer \
     && apt-get clean
 
-fallocate -l 512m /swap
+fallocate -l 1551m /swap
 chmod 600 /swap
 mkswap /swap
 swapon /swap
