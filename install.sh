@@ -33,11 +33,11 @@ apt-get install -y php php-bcmath php-bz2 php-calendar php-ctype php-curl php-do
     && mv composer.phar /usr/bin/composer \
     && apt-get clean
 
-fallocate -l 1551m /swap
-chmod 600 /swap
-mkswap /swap
-swapon /swap
-sh -c 'echo "/swap none  swap    sw   0    0" >> /etc/fstab'
+# fallocate -l 1551m /swap
+# chmod 600 /swap
+# mkswap /swap
+# swapon /swap
+# sh -c 'echo "/swap none  swap    sw   0    0" >> /etc/fstab'
 
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
